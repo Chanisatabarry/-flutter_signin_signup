@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 19, 19, 19),
+      backgroundColor: Color.fromARGB(255, 55, 163, 182),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
         child: Form(
@@ -55,18 +55,18 @@ class HomeScreen extends StatelessWidget {
               ),
               MyTextField(
                 controller: emailController,
-                hintText: "Enter your email",
+                hintText: 'Enter your email',
                 obscureText: false,
-                labelText: "Email",
+                labelText: 'Email',
               ),
               const SizedBox(
                 height: 20,
               ),
               MyTextField(
                 controller: passwordController,
-                hintText: "Enter your password",
+                hintText: 'Enter your password',
                 obscureText: true, //ปกปิดเป็นความลับ
-                labelText: "Password",
+                labelText: 'Password',
               ),
               const SizedBox(
                 height: 20,
@@ -106,8 +106,8 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     const Expanded(
                       child: Divider(
-                        thickness: 0.5,
-                        color: Color.fromARGB(255, 207, 177, 234),
+                        thickness: 1.0,
+                        color: Color.fromARGB(255, 49, 56, 255),
                       ),
                     ),
                     Padding(
@@ -117,15 +117,15 @@ class HomeScreen extends StatelessWidget {
                         style: GoogleFonts.lato(
                             textStyle: Theme.of(context).textTheme.displaySmall,
                             fontSize: 16,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w600,
                             fontStyle: FontStyle.normal,
-                            color: const Color.fromARGB(255, 119, 255, 162)),
+                            color: Color.fromARGB(255, 173, 254, 199)),
                       ),
                     ),
                     const Expanded(
                       child: Divider(
-                        thickness: 0.5,
-                        color: Color.fromARGB(255, 207, 177, 234),
+                        thickness: 1.0,
+                        color: Color.fromARGB(255, 49, 56, 255),
                       ),
                     ),
                   ],
@@ -165,7 +165,7 @@ class HomeScreen extends StatelessWidget {
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.italic,
-                        color: const Color.fromARGB(255, 80, 255, 136)),
+                        color: const Color.fromARGB(255, 173, 254, 199)),
                   ),
                   const SizedBox(
                     height: 2,
@@ -186,7 +186,7 @@ class HomeScreen extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
                           fontStyle: FontStyle.italic,
-                          color: const Color.fromARGB(255, 10, 135, 18)),
+                          color: Color.fromARGB(255, 80, 255, 136)),
                     ),
                   ),
                 ],

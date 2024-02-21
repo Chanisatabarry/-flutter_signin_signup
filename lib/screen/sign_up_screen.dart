@@ -15,7 +15,7 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 19, 19, 19),
+      backgroundColor: Color.fromARGB(255, 55, 163, 182),
       body: Form(
         child: Column(
           children: [
@@ -42,34 +42,38 @@ class SignUpScreen extends StatelessWidget {
               height: 20,
             ),
             MyTextField(
-                controller: nameController,
-                hintText: 'Enter your name',
-                obscureText: false,
-                labelText: 'Name'),
+              controller: nameController,
+              hintText: 'Enter your name',
+              obscureText: false,
+              labelText: 'Name',
+            ),
             const SizedBox(
               height: 20,
             ),
             MyTextField(
-                controller: emailController,
-                hintText: 'Enter your email',
-                obscureText: false,
-                labelText: 'Email'),
+              controller: emailController,
+              hintText: 'Enter your email',
+              obscureText: false,
+              labelText: 'Email',
+            ),
             const SizedBox(
               height: 20,
             ),
             MyTextField(
-                controller: passwordController,
-                hintText: 'Enter your password',
-                obscureText: true,
-                labelText: 'Password'),
+              controller: passwordController,
+              hintText: 'Enter your password',
+              obscureText: true,
+              labelText: 'Password',
+            ),
             const SizedBox(
               height: 20,
             ),
             MyTextField(
-                controller: re_passwordController,
-                hintText: 'Enter your password again',
-                obscureText: true,
-                labelText: 'Re-Password'),
+              controller: re_passwordController,
+              hintText: 'Enter your password again',
+              obscureText: true,
+              labelText: 'Re-Password',
+            ),
             const SizedBox(
               height: 20,
             ),
@@ -87,7 +91,7 @@ class SignUpScreen extends StatelessWidget {
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                       fontStyle: FontStyle.italic,
-                      color: Color.fromARGB(255, 220, 120, 185)),
+                      color: Color.fromARGB(255, 229, 168, 207)),
                 ),
                 const SizedBox(
                   height: 2,
